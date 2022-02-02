@@ -10,12 +10,13 @@ class Scenes:
         self.grounds = grounds
         self.trees = []
         self.fruits = []
+        self.enemies = []
         self.trampolines = []
         self.w = 128
         self.h = 128
         self.bgcolor = 255, 255, 255
         self.player = None
-        self.scale = 0.5
+        self.scale = 0.8
         self.s_w = int(self.w * self.scale)
         self.s_h = int(self.h * self.scale)
         self.size = None

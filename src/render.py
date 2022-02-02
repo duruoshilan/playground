@@ -15,6 +15,7 @@ class Render:
         self.sprite_group.add(self.screnes.trees)
         self.sprite_group.add(self.screnes.trampolines)
         self.sprite_group.add(self.screnes.fruits)
+        self.sprite_group.add(self.screnes.enemies)
 
         while True:
             for event in pygame.event.get():
@@ -26,5 +27,5 @@ class Render:
             self.sprite_group.draw(screen)
             self.sprite_group.update()
 
-            clock.tick(40)
+            clock.tick(20)
             pygame.display.update()

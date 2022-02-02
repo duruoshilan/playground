@@ -10,6 +10,7 @@ class Trampoline(Actor):
         self.animation["jump"] = self.get_image(src + "Jump (28x28).png", 28, 28, 8)
         self.reset_status = "idle"
         self.init_data(28, 28, "idle")
+        self.offset = (self.scenes.s_w // 2 - self.s_w // 2), (self.scenes.s_h // 2 - self.s_h // 6) 
         self.scenes.trampolines.append(self)
 
 class TrampolinePair:
